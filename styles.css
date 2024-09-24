@@ -1,0 +1,120 @@
+html {
+    --s: 131px; /* control the size*/
+    --c1: #49072a;
+    --c2: #000000;
+    
+    --_g: 
+       var(--c2) 6%  14%,var(--c1) 16% 24%,var(--c2) 26% 34%,var(--c1) 36% 44%,
+       var(--c2) 46% 54%,var(--c1) 56% 64%,var(--c2) 66% 74%,var(--c1) 76% 84%,var(--c2) 86% 94%;
+    background:
+      radial-gradient(100% 100% at 100% 0,var(--c1) 4%,var(--_g),#0008 96%,#0000),
+      radial-gradient(100% 100% at 0 100%,#0000, #0008 4%,var(--_g),var(--c1) 96%)
+      var(--c1);
+    background-size: var(--s) var(--s);
+  }
+body{
+    margin: 0;
+    font-family: "Nanum Gothic Coding", monospace;
+
+
+    color: white;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background: rgb(73,7,42);
+    background: linear-gradient(90deg, rgba(73,7,42,0.7540266106442577) 0%, rgba(0,0,0,0.7456232492997199) 100%);
+    backdrop-filter: blur(3px);
+    max-inline-size: 20rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding-block-end: 1rem;
+}
+
+.imgCard{
+    max-inline-size: 100%;
+    block-size: 25rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.textCard{
+    margin-inline: 1rem;
+}
+.textLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+button{
+    font-family: "Nanum Gothic Coding", monospace;
+    color: white;
+    background-color: #00000000;
+    border: .25rem solid rgba(73, 7, 42, 0.999);
+    border-radius: .75rem;
+    font-size: 1.5rem;
+}
+.buttonlarge{
+    inline-size: 12rem;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color:white;
+    color:  rgba(73, 7, 42, 0.999);
+    border: .25rem solid white;
+    transition: all ease-in-out .25s;
+}
+
+
+.catalogue{
+    max-inline-size: 70rem;
+    background-color: rgba(73, 7, 42, 0.577);
+    backdrop-filter: blur(3px);
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-inline: 1rem;
+}
+
+.item{
+    background-color: antiquewhite;
+    max-inline-size: 20rem;
+    background-color: #000000d8;
+}
+
+.imgItem{
+    max-inline-size: 100%;
+    max-block-size: 20rem;
+    object-fit: cover;
+}
+
+.itemInfo{
+    padding: 1rem;
+}
+
+.infoFont{
+    font-size: 1.15rem;
+}
+
+.price{
+    font-size: 2rem;
+    font-weight: 700;
+
+    margin: 0;
+    margin-bottom: 1rem;
+}
